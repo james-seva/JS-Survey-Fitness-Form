@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JS Fitness Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  
+  <div class="container">
+    <header class="header">
+  <h1 id="title" class="text-center">JS Fitness Survey Form</h1>
+  <p id="description" class="description text-center">Thank you for pumping the Iron with us!
+    Please take the time to answer this survey to help us improve our facility
+  </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-control"  placeholder="Enter your name" required></div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required></div>
+    <div class="form-group">
+<label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+    <input id="number" type="number" min="15" max="120" class="form-control" placeholder="Age"></div>
+    <div class="form-group">
+    <p>Which part of the gym facility you like the most?</p>
+    <select id="dropdown" name="facility" class="form-control" required>
+      <option>Choose here</option>
+      <option value="weights-area">Weights area</option>
+      <option value="basketball-court">Basketball court</option>
+      <option value="boxing-area">Boxing area</option>
+      <option value="cardio-entertainment">Cardio Entertainment</option>
+    </select>
+    </div>
+    <div>
+ <p>Would you recommend JS Fitness to your friend/relatives?</p>
+ <label>
+   <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked>Yes</label>
+  <label>
+   <input name="user-recommend" value="Yes" type="radio" class="input-radio" required>Not sure yet</label>
+<label>
+    <input name="user-recommend" value="Yes" type="radio" class="input-radio" required>No</label>
+    </div>
+    <div class="form-group">
+<p>What exercise do you like to do here?</p>
+<select id="dropdown" name="facility" class="form-control"  required>
+      <option disabled selected value>Choose here</option>
+      <option>Weight training</option>
+      <option>Boxing routine</option>
+      <option>Cardio Exercise</option>
+      <option>Yoga</option>
+      <option>HIIT</option>
+    </select>
+    </div>
+    <div class="form-group">
+  <p>What would you like to be improved?<span class="clue">(Check that all apply)</span></p>
+  <label>
+   <input name="like" value="staff" type="checkbox" class="input-checkbox"> Staff</label>
+  <label>
+   <input name="like" value="gym-facility" type="checkbox" class="input-checkbox">Gym facility</label>
+  <label>
+    <input name="like" value="gym-sanitation" type="checkbox" class="input-checkbox"> Gym Sanitation</label>
+    <label>
+    <input name="like" value="comfort-rooms" type="checkbox" class="input-checkbox"> Comfort Rooms</label>
+    <label>
+    <input name="like" value="subscription" type="checkbox" class="input-checkbox"> Subscription Plans</label>
+    <label>
+    <input name="like" value="training-programs" type="checkbox" class="input-checkbox"> Training Programs</label>
+    </div>
+     <div class="form-group">
+    <p>We love to hear your feedback, any comments and suggestions?</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Say something about us..."></textarea>
+    </div>
+    <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+    
+    
+  </form>
+  </div>
+  </body>
+  </html>
+<!-- partial -->
+  
+</body>
+</html>
